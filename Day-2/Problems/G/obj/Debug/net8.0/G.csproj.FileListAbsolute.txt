@@ -1,0 +1,15 @@
+D:\BootCamp\BootCamp\Day-2\Problems\G\bin\Debug\net8.0\G.exe
+D:\BootCamp\BootCamp\Day-2\Problems\G\bin\Debug\net8.0\G.deps.json
+D:\BootCamp\BootCamp\Day-2\Problems\G\bin\Debug\net8.0\G.runtimeconfig.json
+D:\BootCamp\BootCamp\Day-2\Problems\G\bin\Debug\net8.0\G.dll
+D:\BootCamp\BootCamp\Day-2\Problems\G\bin\Debug\net8.0\G.pdb
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\G.GeneratedMSBuildEditorConfig.editorconfig
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\G.AssemblyInfoInputs.cache
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\G.AssemblyInfo.cs
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\G.csproj.CoreCompileInputs.cache
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\G.sourcelink.json
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\G.dll
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\refint\G.dll
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\G.pdb
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\G.genruntimeconfig.cache
+D:\BootCamp\BootCamp\Day-2\Problems\G\obj\Debug\net8.0\ref\G.dll
