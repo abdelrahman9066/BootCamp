@@ -1,0 +1,33 @@
+/*Style classes*/
+.div1{
+    background-color: rgba(106, 25, 255,1);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 70%;
+    width: 80%;
+    height: 15px;
+    padding: 10px;
+}
+
+.div2{
+    background-color: rgba(106, 25, 255,0.5);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 70%;
+    width: 80%;
+    height: 15px;
+    margin-top:10px;
+    padding: 10px;
+}
+
+.div3{
+    background-color: rgba(106, 25, 255,0.1);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 70%;
+    width: 80%;
+    height: 15px;
+    margin-top:10px;
+    padding: 10px;
+}
+/*End style*/
