@@ -1,0 +1,21 @@
+.container1{
+    background-color:ghostwhite;
+    background-image: url("shape.png");
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+.container2{
+    background-color:ghostwhite;
+    background-image: url("shape.png");
+    margin: auto;
+    width: 400px;
+    height: 800px;
+    background-repeat: no-repeat;
+    color: white;
+    display: inline-block
+    
+}
