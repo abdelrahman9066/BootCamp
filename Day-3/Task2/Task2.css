@@ -1,21 +1,35 @@
 .container1{
-    background-color:ghostwhite;
-    background-image: url("shape.png");
+    background-color: gainsboro;
+    width: 200px;
+    height: 200px;
     display: inline-block;
-    width: 400px;
-    height: 400px;
-    background-repeat: no-repeat;
+      
+}
+.shape1{
+    background-image: url(shape.png);
+    background-size: cover;
+    height: 50%;
+    width: 50%;
     color: white;
-    
+    background-repeat: no-repeat;
+
+
 }
 .container2{
-    background-color:ghostwhite;
-    background-image: url("shape.png");
-    margin: auto;
-    width: 400px;
-    height: 800px;
-    background-repeat: no-repeat;
-    color: white;
-    display: inline-block
+    background-color: gainsboro;
     
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+      
+}
+.shape2{
+    background-image: url(shape.png);
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+
+    color: white;
+    background-repeat: repeat-y;
 }
