@@ -1,0 +1,39 @@
+.note1{
+    background-color:#e0e0e0;
+    padding: 10px;
+    padding-left: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.block1{
+    background-color:red;
+    width: 4px;
+    height: 30px;
+    position: absolute;
+    left: 15px;
+    align-items: center;
+    
+
+    
+}
+.note2{
+    background-color:#e0e0e0;
+    padding: 10px;
+    padding-left: 18px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+.block2{
+    background-color:green;
+    width: 4px;
+    height: 30px;
+    position: absolute;
+    left: 15px;
+    top: 103px;
+    align-items: center;
+}

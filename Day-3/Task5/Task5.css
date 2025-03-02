@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+.font1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    
+}
+.font2{
+    font-weight: bold;
+    font-size: 50px;}
+
+.font3{
+    font-weight:bolder;
+    font-size: 25px;
+}

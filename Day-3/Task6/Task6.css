@@ -1,0 +1,31 @@
+.container{
+    background-color:rgba(228, 251, 255, 0.747);
+    text-align: center;
+    height: 350Px;
+    padding-top: 10px;
+}
+p{
+    background-color: gainsboro;
+    float: left;
+    padding: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin:10px;
+    font-weight: bold ;
+
+}
+.row-1 p{
+    width: calc(100% - 20px);
+}
+.row-2 p{
+    display: inline;
+    width: calc(100%/3 - 20px);
+}
+.row-3 p{
+    display: inline;
+    width: calc(100%/2 - 20PX);
+}
+.row-4 p{
+    display: inline;
+    width: calc(100%/4 - 20px);
+}
