@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row1{
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    padding: 15px;
+    margin: 5px;
+    width: 50%;
+    position: relative;
+}
+.row1::before,
+.row2::before,
+.row3::before{
+    background-image: linear-gradient(to right, red 50%, green 50%);
+    content: "";
+    position: absolute;
+    padding-top: 5px;
+    bottom: 0;
+    left:0;
+    justify-content: center;
+    width: 100%;
+    
+}
+.row2,.row3{
+    background-color: gainsboro;
+    color:darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    padding: 15px;
+    margin: 5px;
+    width: 50%;
+    position: relative;
+
+}
