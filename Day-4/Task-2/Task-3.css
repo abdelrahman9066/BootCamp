@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container{
+    background-color: aliceblue;
+    margin: 5px;
+    height: 400px;
+    width: 100%
+}
+.top,
+.bottom{
+    display: flex;
+    justify-content: center;
+    
+}
+.div-1{
+    background-color:dimgray;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 20%;
+    margin: 15px;
+}
+.div-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:dimgray;
+    color: white;
+    text-align: center;
+    height: 250px;
+    width: 20%;
+    margin: 15px;
+
+}
