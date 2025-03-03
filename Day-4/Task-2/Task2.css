@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.red{
+    background-color:crimson;
+    width : 400px;
+    height: 290px;
+    justify-content: center;
+    transform: rotate(5deg);
+}
+.blue{
+    background-color: rgb(0, 153, 255);
+    width : 400px;
+    height: 290px;
+    justify-content: center;
+    transform: rotate(-10deg);
+}
+.container{
+   background-color: white;
+   transform: rotate(5deg);
+   border: 1px solid gray;
+   justify-content: center;
+   text-align: center;
+   padding: 115px;
+   
+
+    font-size: 50px;
+    font-weight: bold;
+    color:aqua;
+}
