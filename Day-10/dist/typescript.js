@@ -1,6 +1,7 @@
+//import { IMovieApp } from "./types/IMovieApp";
+// import { IMovie } from "./types/IMovie";
 var MovieApp = /** @class */ (function () {
     function MovieApp() {
-        this.API_KEY = '21d6601622ce880a80939f3c1823ce8e';
         this.moviesData = [];
         this.currentMovieIndex = 0;
         this.backgroundImg = document.querySelector('.background img');
@@ -22,7 +23,7 @@ var MovieApp = /** @class */ (function () {
         var _this = this;
         if (query === void 0) { query = 'batman'; }
         try {
-            fetch("https://api.themoviedb.org/3/search/movie?api_key=".concat(this.API_KEY, "&query=").concat(query))
+            fetch("https://api.themoviedb.org/3/search/movie?api_key=21d6601622ce880a80939f3c1823ce8e&query=".concat(query))
                 .then(function (response) { return response.json(); })
                 .then(function (data) {
                 _this.moviesData = data.results.slice(0, 15);
