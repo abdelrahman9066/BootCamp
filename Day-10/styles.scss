@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+
+}
+// Navbar start
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .links{
+        font-size: 10px;
+        li{
+            color: white;
+            list-style: none;
+            display: inline-block;
+            right: 0;
+            align-items: center;
+            margin: 20px 20px 0px 20px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: -5px;
+                right: 0;
+                background-color: white;
+                transition: 0.3s ;
+            }
+            &:hover::after {
+                width: 100%;
+                left: 0;
+                right: auto;
+            }
+        
+            &.search-icon {
+                color: white;
+                position: relative;
+                cursor: pointer;
+                
+                .search-container {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    background: black;
+                    opacity: 0.9;
+                    padding: 10px;
+                    border-radius: 5px;
+                    width: 250px;
+                    z-index: 1;
+                    
+                    .search-input {
+                        width: 70%;
+                        border: 1px solid #f5df1c;
+                        background: #111;
+                        color: white;
+                        border-radius: 3px;
+                        margin-bottom: 5px;
+                    }
+                    
+                    .search-button {
+                        background: #f5df1c;
+                        color: black;
+                        border: none;
+                        padding: 5px;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        font-weight: bold;
+                    }
+                }
+                
+                &:hover .search-container {
+                    display: block;
+                }
+            }
+        }
+        
+        
+    }
+    .logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: #f5df1c;
+    margin: 20px 20px 0 0px;
+    .log {
+        background-color: #f5df1c;
+        padding: 2px 5px;
+        color: black;
+        border-radius: 3px;
+        margin-right: 6px;
+        font-size: 12px;
+    }
+    }
+    
+}
+// Navbar end
+// Main start
+.background {
+    img{
+        position: absolute;
+        top: 0;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+// Main end
+// Main content start
+.details{
+    position: absolute;
+    top: 20%;
+    color: white;
+    .text{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .rate{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-size: 10px;
+        margin-top: 10px;
+        .imdb{
+            background-color: #f5df1c;
+            color: black;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: 800;
+            font-size: 10px;
+        }
+        
+    }
+    .vote_count{
+        opacity: 40%;
+    }
+    .info{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .buttons{
+        gap: 15px;
+        margin-top: 20px;
+        button{
+            background-color: #f5df1c;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 10px;
+            cursor: pointer;
+            border: none;
+        }
+        .Trailer{
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+        i{
+            position: relative;
+            right: 5px;
+            font-size: 10px;
+        }
+
+    }
+    .switch-buttons{
+        margin-top: 20px;
+        button{
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer; 
+        }
+    }
+}
+// Main content end
+// Cards start
+.cards-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 290px;
+    padding-top: 20px;
+    overflow: hidden;
+    
+    .card {
+        min-width: 150px;
+        height: 190px;
+        transition: 0.3s;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+        
+        
+    }
+    .card.active{
+        transform: translateY(-15px);
+}
+}
+// Cards end
