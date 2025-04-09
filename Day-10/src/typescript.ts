@@ -4,7 +4,7 @@ class MovieApp {
     private moviesData: Array<any> = [];
     private currentMovieIndex: number = 0;
 
-    private backgroundImg = document.querySelector<HTMLImageElement>('.background img')!;
+    private backgroundImg = document.querySelector<HTMLImageElement>('.main')!;
     private movieTitle = document.querySelector<HTMLHeadingElement>('.details .text h2')!;
     private imdbRating = document.querySelector<HTMLElement>('.details .rate .vote_average')!;
     private voteCount = document.querySelector<HTMLElement>('.details .vote_count')!;
@@ -22,7 +22,7 @@ class MovieApp {
         this.fetchMovies();
     }
 
-    private fetchMovies(query: string = 'batman') {
+    private fetchMovies(query: string = 'spiderman') {
         try {
             fetch(`https://api.themoviedb.org/3/search/movie?api_key=21d6601622ce880a80939f3c1823ce8e&query=${query}`)
                 .then(response => response.json())
@@ -44,7 +44,9 @@ class MovieApp {
         this.imdbRating.textContent = mainMovie.vote_average.toFixed(2);
         this.voteCount.textContent = `(${mainMovie.vote_count})`;
         this.releaseYear.textContent = new Date(mainMovie.release_date).getFullYear().toString();
-        this.backgroundImg.src = `https://image.tmdb.org/t/p/original${mainMovie.backdrop_path || mainMovie.poster_path}`;
+        
+        // change background image to poster path using background css 
+        this.backgroundImg.style.background = `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url(https://image.tmdb.org/t/p/original${mainMovie.backdrop_path || mainMovie.poster_path}) no-repeat center/cover fixed`;
         this.overview.textContent = mainMovie.overview || 'No overview available.';
 
         const cards = document.querySelectorAll<HTMLElement>('.card');
