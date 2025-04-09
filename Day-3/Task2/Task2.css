@@ -1,35 +1,8 @@
-.container1{
-    background-color: gainsboro;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-      
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.shape1{
-    background-image: url(shape.png);
-    background-size: cover;
-    height: 50%;
-    width: 50%;
-    color: white;
-    background-repeat: no-repeat;
-
-
-}
-.container2{
-    background-color: gainsboro;
+.box div{
     
-    margin-left: 50px;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-      
-}
-.shape2{
-    background-image: url(shape.png);
-    height: 100%;
-    width: 50%;
-    background-size: cover;
-
-    color: white;
-    background-repeat: repeat-y;
 }

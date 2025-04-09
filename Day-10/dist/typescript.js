@@ -4,7 +4,7 @@ var MovieApp = /** @class */ (function () {
     function MovieApp() {
         this.moviesData = [];
         this.currentMovieIndex = 0;
-        this.backgroundImg = document.querySelector('.background img');
+        this.backgroundImg = document.querySelector('.main');
         this.movieTitle = document.querySelector('.details .text h2');
         this.imdbRating = document.querySelector('.details .rate .vote_average');
         this.voteCount = document.querySelector('.details .vote_count');
@@ -21,7 +21,7 @@ var MovieApp = /** @class */ (function () {
     }
     MovieApp.prototype.fetchMovies = function (query) {
         var _this = this;
-        if (query === void 0) { query = 'batman'; }
+        if (query === void 0) { query = 'spiderman'; }
         try {
             fetch("https://api.themoviedb.org/3/search/movie?api_key=21d6601622ce880a80939f3c1823ce8e&query=".concat(query))
                 .then(function (response) { return response.json(); })
@@ -42,7 +42,8 @@ var MovieApp = /** @class */ (function () {
         this.imdbRating.textContent = mainMovie.vote_average.toFixed(2);
         this.voteCount.textContent = "(".concat(mainMovie.vote_count, ")");
         this.releaseYear.textContent = new Date(mainMovie.release_date).getFullYear().toString();
-        this.backgroundImg.src = "https://image.tmdb.org/t/p/original".concat(mainMovie.backdrop_path || mainMovie.poster_path);
+        // change background image to poster path using background css 
+        this.backgroundImg.style.background = "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url(https://image.tmdb.org/t/p/original".concat(mainMovie.backdrop_path || mainMovie.poster_path, ") no-repeat center/cover fixed");
         this.overview.textContent = mainMovie.overview || 'No overview available.';
         var cards = document.querySelectorAll('.card');
         cards.forEach(function (card, index) {
