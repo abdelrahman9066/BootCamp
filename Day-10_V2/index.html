@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./logo.png" alt="">
+                    <h1>YourLogo</h1>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="image">
+                    <div class="dots">
+                        <span class="dot-big"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                      </div>
+                </div>
+                <div class="signup-form">
+                    <h1>Sign Up</h1>
+                    <p>Let’s get you all st up so you can access your personal account.</p>
+                    <!-- start form -->
+                    <form action="#">
+                        <!-- names -->
+                        <div class="names">
+                            <div class="field">
+                                <label for="fname">First Name</label>
+                                <input type="text" class = "form-input" id="fname" required>
+                            </div>
+                            <div class="field">
+                                <label for="lname">Last Name</label>
+                                <input type="text" class = "form-input" id="lname" required>
+                            </div>
+                        </div>
+                        <!-- names end -->
+                        <!-- contact -->
+                        <div class="contact">
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" class = "form-input" id="email" required>
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" class = "form-input" id="phone" required>
+                            </div>
+                        </div>
+                        <!--contact end -->
+                        <!-- password -->
+                        <div class="passwords">
+                            <div class="field">
+                                <label for="password">Password</label>
+                                <input type="password" class = "form-input" id="password" required>
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </div>
+                            <div class="field">
+                                <label for="cpassword">Confirm Password</label>
+                                <input type="password" class = "form-input" id="cpassword" required>
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </div>
+                        </div>
+                        <!-- end passwords -->
+                        <div class="checkbox">
+                            <input type="checkbox" id="terms" class="box" required>
+                            <label for="terms">I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policies</a></label>
+                        </div>
+                    </form>
+                    <!-- end form -->
+                    <button class = "submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Login</a></p>
+                    <!-- start socials -->
+                    <div class="socials">
+                        <div class="alternative">
+                            <p>Or sign up with</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon-box-f">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="icon-box-g">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="icon-box-a">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                        </div>
+                </div>
+                  <!-- end socials -->
+            </div>
+        </div>
+    </div>
+    <script src="./dist/ts.js"></script>
+</body>
+</html>
